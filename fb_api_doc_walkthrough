@@ -1,0 +1,51 @@
+.getLoginStatus() 
+//Returns the Facebook Login status of a user, with an authResponse object if they are logged in.
+.login()
+//Prompts a user to login to your app using the Login dialog in a popup. This method can also be used with an already logged-in user to request additional permissions from them.
+.logout()
+//Used to logout the current user both from your site or app and from Facebook.com.
+.getAuthResponse()
+//When your app is able to assume that a user is definitely logged-in via Facebook, this synchronous method can return the authResponse object without the overhead of an asynchronous call.
+Event Handling Methods
+
+.Event.subscribe()
+//Subscribe to a JavaScript event, which will fire on various different types of actions, such as someone clicking a Like button, or adding to a Comments Box.
+.Event.unsubscribe()
+//Remove any event subscriptions that were previously created.
+App Events
+
+.AppEvents.LogEvent()
+Log an application event, for example when someone completes your tutorial.
+.AppEvents.logPurchase()
+When someone makes a purchase in your app, log the event.
+.AppEvents.activateApp()
+Log when app launches.
+XFBML Methods
+
+XFBML is a markup language like HTML, with special tags that are used to insert social plugins into HTML pages.
+
+Method	Description
+.XFBML.parse
+Parses and renders any XFBML on a page. This can be useful if you insert any social plugins into the DOM after the initial page load, or you set xfbml as false in FB.init().
+Canvas Methods
+
+These methods can only be used by Apps on Facebook.com that run in a Canvas page.
+
+.Canvas.Prefetcher.addStaticResource()
+Controls which static resources are flushed to the browser early.
+.Canvas.Prefetcher.setCollectionMode()
+Controls how statistics are collected on resources used by your application, with the intent to influence whether those resources will be fetched to the browser early, or to turn off Prefetching completely.
+.Canvas.scrollTo()
+Tells Facebook to scroll to a specific location in the iframe of your canvas page.
+.Canvas.setAutoGrow()
+Starts or stops a timer which resizes your iframe every few milliseconds.
+.Canvas.setSize()
+Tells Facebook to resize your iframe.
+.Canvas.setUrlHandler()
+Registers the callback for inline processing (i.e. without page reload) of user actions, such as clicks on Live Ticker game stories.
+.Canvas.setDoneLoading()
+Reports that the page is now usable by the user, for collecting performance metrics.
+.Canvas.startTimer()
+When using .setDoneLoading(), controls the page load timer.
+.Canvas.stopTimer()
+When using .setDoneLoading(), controls the page load timer.
